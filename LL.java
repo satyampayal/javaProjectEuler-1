@@ -89,10 +89,6 @@ public class LL {
 
         list.printList();
 
-        list.deleteLast();
-
-
-        list.printList();
 
         
 
