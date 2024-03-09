@@ -19,6 +19,7 @@ public class fibonaccu {
         temp=a+b;
         }
       }
+      sc.close();
 
 
     }
