@@ -41,32 +41,33 @@ class Emp {
     public void setSallery(double salery) {
        this.salery=salery;
         
-         int age=this.age;
-       if(age>35 ){
-        if(this.dept=="hr"){
-         this.salery=this.salery+ this.salery*0.07;
+incresaeSalery();
 
+    }
+
+    void incresaeSalery(){
+        int age=this.age;
+        if(age>35 && age<60 ){
+         if(this.dept=="hr"){
+          this.salery=this.salery+ this.salery*0.07;
+ 
+         }
+         else{
+             
+         this.salery=this.salery+this.salery*0.02;
+         }
+ 
         }
         else{
-            
-        this.salery=this.salery+this.salery*0.02;
+         if(age<40 && this.dept=="admin"){
+             
+         this.salery=this.salery+ this.salery*0.15;
+         }
+         else{
+                 this.salery=50000;
+         }
+ 
         }
-
-       }
-       else{
-        if(age<40 && this.dept=="admin"){
-            
-        this.salery=this.salery+ this.salery*0.15;
-        }
-        else{
-            if(age>60){
-                
-        this.salery=50000;
-            }
-        }
-
-       }
-
     }
 
 }
@@ -76,7 +77,7 @@ public class Employee {
     public static void main(String[] args) {
         Emp e1 = new Emp();
         // set Age
-        e1.setAge(12);
+        e1.setAge(40);
         e1.getAge();
         //set name
         e1.setName("Satyam");
@@ -89,6 +90,7 @@ public class Employee {
         e1.getSallery();
       
         // salery incresae condition __
+        
 
     }
 
