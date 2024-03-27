@@ -1,0 +1,2 @@
+EsLint-- check synatx, varible ,code Format,function method difference , space betwwen two function
+Prettier-- For beauity of code 
